@@ -1,0 +1,577 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#tituloPrincipal {
+    color: #3F51B5;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-botom: 3%;
+    margin-top: 0px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+nav .menu {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr) repeat(1,4fr) repeat(1,1fr) repeat(1,1fr) ;
+    height: auto;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    background-color: #3F51B5;
+}
+
+nav .menu .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+nav .menu .logo .tituloHeader {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+nav .menu .navegacion {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0px;
+}
+
+nav .menu .navegacion li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav .menu .navegacion li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-left:20px;
+    padding-right: 20px;
+    margin: auto 0;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+nav .menu .navegacion li a:hover {
+    background-color: #5C6BC0;
+
+
+}
+
+.msgError {
+    padding: 10px 0px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.msgCorrecto {
+    padding: 10px 0px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.containerForm {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 20px;
+    width: 25%;
+    border: 3px solid #3F51B5;
+
+}
+
+.containerForm form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerForm form h1 {
+    text-align: center;
+    color: #3F51B5;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.inputText {
+    border:none;
+    border-bottom: 2px solid #3F51B5;
+    outline: none;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2%;
+    color: #3F51B5;
+}
+
+#containerInfoPrincipal {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3F51B5 ;
+    width: 100%;
+}
+
+.inputContrasenna {
+    border:none;
+    border-bottom: 2px solid #3F51B5;
+    outline: none;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2%;
+    color: #3F51B5;
+}
+
+.boton {
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.enlaceBoton {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.containerValidar {
+    padding: 4%;
+}
+
+.containerValidar h2 {
+    color: #3F51B5;
+}
+#botonValidarTodos{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    color: #3F51B5;
+}
+
+.containerAcciones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 6%;
+    margin-bottom: 6%
+}
+
+.containerAcciones a {
+    text-decoration: none;
+    transition: 1s;
+}
+
+.containerAcciones a:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.containerAcciones a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #3F51B5;
+
+}
+
+.containerAcciones a div h2 {
+    color: #3F51B5;
+}
+
+.containerUsuarios {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.usuario {
+    padding: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #3F51B5;
+}
+
+.usuario h3 {
+    color: #3F51B5;
+    font-size: 1.4rem;
+}
+
+.usuario a {
+    text-decoration: none;
+}
+
+.datosUsuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #1A237E;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.datosUsuario b {
+    font-size: 1.2rem;
+    padding: 3%;
+}
+
+.rol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 3%;
+    background-color: #FFFFFF;
+    color: #283593;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.cierreSesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: rgba(26, 35, 126, 0.7)
+}
+
+.cierreSesion:hover {
+    background-color: #5C6BC0;
+}
+
+.cierreSesion a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+.containerFirma {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerRecetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3%;
+    width: 80%;
+}
+
+.containerPrincipalRecetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerPrincipalRecetas h1 {
+    color: #3F51B5;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0px;
+    font-size: 2.2rem;
+}
+
+.receta {
+    display: flex;
+    flex-direction: column;
+    *justify-content: center;
+    *align-items: center;
+    border: 3px solid #3F51B5;
+    color: #3F51B5;
+    font-weight: bold;
+    width: 100%;
+}
+
+.receta p {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0px;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+}
+
+.receta .ifPublicada{
+    background-color: #FFFFFF;
+    color: #3F51B5 ;
+    padding: 3%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.recetaPrincipal {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    border: 3px solid #3F51B5;
+    *padding-b: 20%;
+    *background-color: #3F51B5;
+    margin: 0px;
+}
+
+.recetaPrincipal p {
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #3F51B5;
+    width: 100%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    text-align: center;
+    margin: 0px;
+}
+
+.recetaPrincipal b {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.recetaPrincipal a {
+    text-decoration: none;
+}
+
+.recetaPrincipal img {
+    width: 100%;
+    height:auto;
+}
+
+.recetaPrincipal .corazon {
+    width: 30%;
+    height: auto;
+}
+
+.estrella {
+    width: 10%;
+    height: auto;
+}
+
+.recetaPrincipal .containerImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.containerRecetasPrincipal {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.containerBusquedaRecetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.containerBusquedaRecetas h2 {
+    color: #3F51B5 ;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.containerBusquedaRecetas form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    width: 100%;
+}
+
+.containerBusquedaRecetas #inputBusqueda {
+
+    outline: none;
+    border: 3px solid #3F51B5;
+    height: 47px;
+    width: 85%;
+    font-size: 1.3rem;
+}
+
+.containerBusquedaRecetas #botonBuscar{
+    width: 15%;
+    margin-left: 2%;
+}
+.containerImgMuestraReceta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.containerImgMuestraReceta img {
+    width: 100%;
+    height: 100%;
+}
+
+.enlaceBotonMisRecetas {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.containerImagenEnlace {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6% ;
+    padding-bottom: 6%;
+}
+
+.containerImagenEnlace .estrella {
+    width: 15%;
+    height: auto;
+}
+
+.elijaPerfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.elijaPerfil select {
+    width: 200px;
+}
+
+.containerDocumentos {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    *align-items: center;
+}
+
+.containerDocumentos h2 {
+    color:  #3F51B5 ;
+    font-size: 2.2rem;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.documento {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.documento a {
+    margin-left: 3%;
+}
+
+.mensajeRecomendaciones {
+    font-size: 2.2rem;
+    color: #3F51B5 ;
+    font-weight: bold;
+}
+
+#enlaceFavoritas {
+    text-decoration: none;
+    color: #e91e63;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-left: 1%;
+}
+
+footer {
+    background-color: #3F51B5;
+    color: #FFFFFF;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h4 {
+    font-size: 1.7rem;
+}
